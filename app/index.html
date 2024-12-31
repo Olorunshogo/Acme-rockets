@@ -245,24 +245,21 @@
                 </div>
             </div>
 
-            <!-- Responsive Design -->
-            <div>
-                <h2>Responsive breakpoints</h2>
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
-
+            <!-- Mode -->
+            <div>                
                 <h2>Mode</h2>
-                <div class="flex w-4/5 h-full mx-auto *:mr-8">
+                <div class="block w-4/5 h-full mx-auto *:mt-4 *:mr-8 md:flex">
 
                     <div>
                         <p>Light mode</p>
-                        <div class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900 shadow-lg">
+                        <div class="bg-white rounded-lg px-6 py-8 ring-1 ring-slate-900 shadow-lg">
                             <div>
                                 <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
                                     <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
                                 </span>
                             </div>
-                            <h3 class="text-slate-900 dark:text-white mt-5 text-base text-left font-medium tracking-tight">Writes upside Down</h3>
-                            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                            <h3 class="text-slate-950 mt-5 text-base text-left font-medium tracking-tight">Writes upside Down</h3>
+                            <p class="text-slate-700 mt-2 text-sm">
                                 The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
                             </p>
                         </div>
@@ -319,6 +316,78 @@
             </div>
 
         </section>
+
+        <!-- Responsive Design -->
+        <section>
+            <h2>Responsive breakpoints</h2>
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
+
+            <div class="mx-auto">
+                <img src="./img/erin-lindford.jpg" alt="" class="w-24 sm:2-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64">
+            </div>
+
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img src="./img/erin-lindford.jpg" alt="" class="h-48 w-full object-cover md:h-full md:w-48">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accomodation for your team</a>
+                        <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- Text-align would be center on mobile screens and left-align it on screens 640px and wider  -->
+                <h3 class="text-center sm:text-left">Center on mobile and left on 640px</h3>
+
+                <!-- Targeting a breakpoint range -->
+                 <h3 class="text-center md:max-xl:text-left">
+                    This text should be center on mobile, left on min-w:640px and center at 760px.
+                 </h3>
+            </div>
+
+            
+        </section>
+
+        <!-- Reusing Styles -->
+        <section>
+            <h2>Reusing styles</h2>
+            <div class="bg-white w-4/5 mx-auto p-4">
+                <div class="flex items-center space-x-2 text-base">
+                    <h4 class="font-semibold text-slate-900">Contributors</h4>
+                    <span class="rounded-full bg-slate-100 px-2 py-1text-xs font-semibold text-slate-700">204</span>
+                </div>
+                <div class="mt-3 flex -space-x-2 overflow-hidden">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                </div>
+                <div class="mt-3 text-sm font-medium">
+                    <a href="#" class="text-blue-500">+ 198 others</a>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <nav class="flex justify-center bg-white rounded-xl w-4/5 mx-auto space-x-4 px-2 py-4">
+                    <a href="/dashboards" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+                    <a href="/team" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
+                    <a href="/projects" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
+                    <a href="/reports" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+                </nav>
+            </div>
+
+            <div class="mt-4 flex justify-center">
+                <button class="btn-primary">
+                    Save changes
+                </button>
+            </div>
+        </section>
+        
 
         <script src="./script.js"></script>
     </body>
