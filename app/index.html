@@ -15,10 +15,11 @@
             </h1>
         </div>
 
+        <!-- Utility-First Fundamentals -->
         <section>
             <h2>Utility First Fundamental</h2>
 
-            <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center gap-x-4">
+            <div class="p-6 max-w-sm mx-auto my-4 bg-white rounded-xl shadow-lg flex items-center gap-x-4">
                 <div class="shrink-0">
                     <img src="./img/conversation-svgrepo-com.svg" alt="ChitChat Logo" class="size-12">
                 </div>
@@ -29,8 +30,8 @@
                 </div>
             </div>
 
-            <div class="flex py-8 px-8 max-w-sm mx-auto space-y-2 bg-white shadow-lg sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:gap-x-6">
-                <img src="./img/erin-lindford.jpg" alt="Woman's face" class="size-12 h-12 rounded-full sm:mx-0 sm:shrink-0" />
+            <div class="flex py-8 px-8 max-w-sm mx-auto rounded-xl space-y-2 bg-white shadow-lg sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:gap-x-6">
+                <img src="./img/erin-lindford.jpg" alt="Woman's face" class="size-16 rounded-full sm:mx-0 sm:shrink-0" />
                 <div class="text-center sm:text-left">
                     <div class="space-y-0 5">
                         <p class="text-lg text-black font-semibold">
@@ -49,13 +50,276 @@
             </div>
         </section>
 
+        <!-- Hover, Focus, and Other States -->
         <section>
             <h2>Handling hover, Focus, and Other States</h2>
-            <button class="bg-violet-500 hover:bg-violet-600">
+            <button class="flex mx-auto px-6 py-2 font-semibold text-white rounded-3xl bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
                 Save changes
             </button>
+
+            <!-- List -->          
+            <div>
+                <ul role="list" class="p-6 divide-y divide-slate-200 pl-5 space-y-3 text-slate-400
+                ">
+                    <!-- Remove top/bottom padding when first/last child -->
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                        <img class="h-10 w-10 rounded-full" src="./img/erin-lindford.jpg" alt="Kristen Ramos">
+                        <div class="ml-3 overflow-hidden">
+                            <p class="text-sm font-medium text-slate-900">Kristen Ramos</p>
+                            <p class="text-sm text-slate-500 truncate">kristen.ramos@example.com</p>
+                        </div>
+                    </li>
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                        <img class="h-10 w-10 rounded-full" src="./img/uknown.jpeg" alt="Kristen Ramos">
+                        <div class="ml-3 overflow-hidden">
+                            <p class="text-sm font-medium text-slate-900">Floyd Miles</p>
+                            <p class="text-sm text-slate-500 truncate">floyd.miles@example.com</p>
+                        </div>
+                    </li>
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                        <img class="h-10 w-10 rounded-full" src="./img/erin-lindford.jpg" alt="Kristen Ramos">
+                        <div class="ml-3 overflow-hidden">
+                            <p class="text-sm font-medium text-slate-900">Courtney Henry</p>
+                            <p class="text-sm text-slate-500 truncate">courtney.henry@example.com</p>
+                        </div>
+                    </li>
+                    <li class="flex py-4 first:pt-0 last:pb-0">
+                        <img class="h-10 w-10 rounded-full" src="./img/uknown.jpeg" alt="Kristen Ramos">
+                        <div class="ml-3 overflow-hidden">
+                            <p class="text-sm font-medium text-slate-900">Ted Fox</p>
+                            <p class="text-sm text-slate-500 truncate">ted.fox@example.com</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul role="list" class="list-disc *:marker:text-sky-400 [&:nth-child(3)]:underline [&:nth-child(3)]:hover:underline">
+                    <li>Kristen Ramos</li>
+                    <li> Floyd Miles</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <!-- Styling Direct Children -->
+                <h3>Categories</h3>
+                <ul role="list" class="flex items-center w-4/5 h-24 mx-auto *:rounded-2xl *:border *:border-sky-100 *:mr-4 *:bg-sky-50 *:py-2 *:px-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
+                    <li>Sales</li>
+                    <li>Marketing</li>
+                    <li>SEO</li>
+                    <li>Analytics</li>
+                    <li>Design</li>
+                    <li>Strategy</li>
+                    <li>Security</li>
+                    <li>Growth</li>
+                    <li>Mobile</li>
+                    <li>UX/UI</li>
+                </ul>
+            </div>
+
+            <!-- Table -->
+            <div>
+                <h2>Table</h2>
+                <table class="mx-auto w-9/12">
+                    <tbody>
+                        <tr class="odd:bg-white even:bg-slate-500 h-10">
+                            <th class="mx-auto">Name</th>
+                            <th class="mx-auto">Title</th>
+                            <th class="mx-auto">Email</th>
+                        </tr>
+                        <tr class="odd:bg-white even:bg-slate-500">
+                            <td class="font-bold">Jane Cooper</td>
+                            <td>Chief Paradigm Technician</td>
+                            <td>jane.cooper@example.com</td>
+                        </tr>
+                        <tr class="odd:bg-white even:bg-slate-500">
+                            <td class="font-bold mr-2">Jane Cooper</td>
+                            <td class="mr-2">Chief Paradigm Technician</td>
+                            <td class="mr-2">jane.cooper@example.com</td>
+                        </tr>
+                        <tr class="odd:bg-white even:bg-slate-500 py-2">
+                            <td class="font-bold mr-2">Jane Cooper</td>
+                            <td class="mr-2">Chief Paradigm Technician</td>
+                            <td class="mr-2">jane.cooper@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Form -->
+            <div class="mx-auto">
+                <h2>Form States</h2>
+                <form action="" class="mx-auto w-9/12 *:mt-4">
+                    <label class="block" for="username">
+                        <span class="block text-sm font-medium text-slate-700">Username</span>
+                        <input type="text" name="username" id="username" disabled placeholder="tbone..."
+                        class="mt-1 block w-4/5 px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                        focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                        invalid:border-pink-500 invalid:text-pink-600
+                        focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                        placeholder:italic placeholder:text-slate-400 sm:text-sm
+                        ">
+                    </label>
+
+                    <label class="block" for="email">
+                        <span class="block text-sm font-medium text-slate-700">Email</span>
+                        <input type="email" name="email" id="email" value="george@krugerindustrial"
+                        class="mt-1 block w-4/5 px-3 py-2 bg-white border border-pink-600 rounded-md text-pink-600 shadow-sm font-medium placeholder-slate-400
+                        focus:outline-none focus:border-pink-700 focus:ring-1 focus:ring-pink-700
+                        disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                        focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                        ">
+                    </label>
+
+                    <label class="block" for="password">
+                        <span class="block text-sm font-medium text-slate-700">Password</span>
+                        <input type="password" name="password" id="password" value="tbone"
+                        class="mt-1 block w-4/5 px-3 py-2 bg-white border border-slate-400 rounded-md text-slate-400 shadow-sm placeholder-slate-400
+                        focus:outline-none focus:border-sky-700 focus:ring-1 focus:ring-slate-500
+                        ">
+                    </label>
+
+                    <div action="" class="flex items-center space-x-6">
+                        <div class="shrink-0">
+                            <img src="./img/uknown.jpeg" alt="Current Profile Photo" class="h-16 w-16 object-cover rounded-full">
+                        </div>
+                        <label for="file" class="block">
+                            <span class="sr-only">Choose profile photo</span>
+                            <input type="file" name="file" id="file"
+                                class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4
+                                file:rounded-full file:border-0 file:text-sm file:font-semibold
+                                file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100
+                            "/>
+                        </label>
+                    </div>
+
+                    <button class="mt-8 flex justify-center items-center mr-auto bg-blue-500 text-white font-bold p-2 rounded-lg
+                     hover:bg-blue-700 w-52 h-10"
+                    >
+                        Save Changes
+                    </button>                   
+                </form>
+            </div>
+
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Published status</legend>
+
+                        <input type="radio" name="status" id="draft" class="peer/draft">
+                        <label for="draft" class="peer-checked:text-sky-500">Draft</label>
+
+                        <input type="radio" name="published" id="published" class="peer/published">
+                        <label for="published" class="peer-checked:text-sky-500">Published</label>
+
+                        <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
+                        <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Hover over this -->
+            <div>
+                <a href="" class="group block max-w-xs mt-2 mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+                        <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New Project</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-wite text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+
+                <blockquote class="bg-white mt-4 w-4/5 mx-auto text-2xl font-semibold italic text-center text-slate-900">
+                    When you look
+                    <span class="before:lock before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                        <span class="relative text-white">annoyed</span>
+                    </span>
+                    all the time, people think that you're busy.
+                </blockquote>
+
+                <div class="selection:bg-fuchsia-300 selection:text-fuchsia-700">
+                    <p>Try selecting some of this text with your mouse.</p>
+                    <p>So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.</p>
+                    <p class="first-line:uppercase first-line:tracking-widest first-letter:text-7sl
+                        first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left
+                    ">Well, let me tell you something, funny boy. Y'know that little stamp, the one that says "New York Public Library"? Well that may not mean anything to you, but that means a lot to me. One whole hell of a lot.</p>
+                    <p>Sure, go ahead, laugh if you want to. I've seen your type before: Flashy, making the scene, flaunting convention. Yeah, I know what you're thinking. What's this guy making such a big stink about old library books? Well, let me give you a hint, junior.</p>
+                </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div>
+                <h2>Responsive breakpoints</h2>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"></div>
+
+                <h2>Mode</h2>
+                <div class="flex w-4/5 h-full mx-auto *:mr-8">
+
+                    <div>
+                        <p>Light mode</p>
+                        <div class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900 shadow-lg">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
+                                </span>
+                            </div>
+                            <h3 class="text-slate-900 dark:text-white mt-5 text-base text-left font-medium tracking-tight">Writes upside Down</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                                The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>Dark mode</p>
+                        <div class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900 shadow-lg">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+                                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
+                                </span>
+                            </div>
+                            <h3 class="text-slate-900 dark:text-white mt-5 text-base text-left font-medium tracking-tight">Writes upside Down</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                                The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div>
+                <button type="button" class="bg-indigo-500 ..." disabled>
+                    <svg class="motion-reduce:hidden animate-spin ..." viewBox="0 0 24 24"><!-- ... --></svg>
+                    Processing...
+                </button>
+
+                <button class="hover:-translate-y-0.5 transition motion-reduce:hover:translate-y-0 motion-reduce:transition-none ...">
+                    Save changes
+                </button>
+                  
+                  <!-- Using `motion-safe` is less code in these situations -->
+                <button class="motion-safe:hover:-translate-x-0.5 motion-safe:transition ...">
+                    Save changes
+                </button>
+            </div>
+
+            <!-- Toggle -->
+            <div>
+                <p>Try toggling the disclosure to see the styles change</p>
+                <div class="max-w-lg mx-auto p-8">
+                    <details>
+                        <summary class="open:bg-white darl:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg" open>
+                            Why do they call it Ovaltine?
+                        </summary>
+                        <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                            <p>The mug is round. The jar is round. They Should call it roundtine.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
         </section>
 
-
+        <script src="./script.js"></script>
     </body>
 </html>
