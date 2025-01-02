@@ -92,12 +92,11 @@
                     </li>
                 </ul>
 
-                <ul role="list" class="list-disc *:marker:text-sky-400 [&:nth-child(3)]:underline [&:nth-child(3)]:hover:underline">
+                <ul role="list" class="list-disc list-inside *:marker:text-sky-400 [&:nth-child(3)]:underline [&:nth-child(3)]:hover:underline">
                     <li>Kristen Ramos</li>
                     <li> Floyd Miles</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Kristen Ramos</li>
+                    <li> Floyd Miles</li>
                 </ul>
 
                 <!-- Styling Direct Children -->
@@ -386,6 +385,68 @@
                     Save changes
                 </button>
             </div>
+        </section>
+
+        <!-- Customization -->
+        <section>
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                  <img class="rounded-lg md:w-56" src="/img/shopping.jpg" alt="Woman paying for a purchase">
+                </div>
+                <div class="mt-4 md:mt-0 md:ml-6">
+                  <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+                    Marketing
+                  </div>
+                  <a href="/get-started" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">
+                    Finding customers for your new business
+                  </a>
+                  <p class="mt-2 text-gray-600">
+                    Getting a new business off the ground is a lot of hard work.
+                    Here are five ideas you can use to find your first customers.
+                  </p>
+                </div>
+              </div>
+        </section>
+
+        <!-- Plugins -->
+        <section>
+            <h2>Typography</h2>
+            <article class="prose lg:prose-xl dark:prose-invert">
+                <h1>Garlic bread with cheese: What the science tells us</h1>
+                <p>
+                    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+                    children, with the food earning such an iconic status in our culture that kids will often dress
+                    up as warm, cheesy loaf for Halloween.
+                </p>
+                <p>
+                    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+                    springing up around the country.
+                </p>
+            </article>
+
+            <h2>Forms</h2>
+            <div>
+                <!-- You can actually customize padding on a select element: -->
+                <input type="text" class="px-2 py-1 rounded-full">
+                    <!-- ... -->
+                </input>
+                
+                <!-- Or change a checkbox color using text color utilities: -->
+                <input type="checkbox" class="rounded text-pink-500" />
+            </div>
+
+            <h2>Aspect ratio</h2>
+            <div class="block w-full aspect-video h-12 md:aspect-square hover:aspect-square">
+                <iframe src="https://www.youtube.com/embed/lCxcTsOHrjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h2>Container queries</h2>
+            <div class="block container mx-auto">
+                <div class="@lg:text-green-400">
+                    <p>The <b>@tailwindcss/container-queries</b> plugin adds new <b>@{size}</b> variants like <b>@sm</b> and <b>@md</b> that let you style an element based on the dimensions of a parent marked with <b>@container</b> instead of the viewport.</p>
+                </div>
+            </div>
+
         </section>
         
 
