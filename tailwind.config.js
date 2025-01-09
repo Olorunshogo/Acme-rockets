@@ -8,8 +8,7 @@ module.exports = {
   // ],
 
   content: [
-    "./app/**/*.{html,js}",
-    './app/index.html',
+    './build/*.html'
   ],
 
   theme: {

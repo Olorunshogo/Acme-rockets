@@ -2,5 +2,6 @@
 {
     "plugins": ["prettier-plugin-tailwincss"],
     "tailwindStylesheet": ["./app/output.css"],
-    "tailwindConfig": ["./tailwind.config.js"]
+    "tailwindConfig": ["./tailwind.config.js"],
+    "tailwindPreserveWhitespace": true
 }
